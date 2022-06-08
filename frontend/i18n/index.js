@@ -23,6 +23,12 @@ export default {
       code: 'de',
       iso: 'de-DE',
       file: 'de'
+    },
+    {
+      name: '日本語',
+      code: 'ja',
+      iso: 'ja-JP',
+      file: 'ja'
     }
   ],
   lazy: true,

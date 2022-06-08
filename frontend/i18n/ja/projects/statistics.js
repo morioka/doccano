@@ -1,6 +1,9 @@
 export default {
-  statistics: 'Metrics',
-  progress: ['Completed', 'Incomplete'],
-  labelStats: 'Label stats',
-  userStats: 'User stats'
+  statistics: '統計',
+  progress: [
+    '完了',
+    '未完'
+  ],
+  labelStats: 'ラベル 統計',
+  userStats: 'ユーザ 統計'
 }

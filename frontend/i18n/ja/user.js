@@ -1,6 +1,6 @@
 export default {
-  login: 'Login',
-  signOut: 'Sign Out',
-  username: 'Username',
-  password: 'Password'
+  login: 'ログイン',
+  signOut: 'サインアウト',
+  username: 'ユーザ名',
+  password: 'パスワード'
 }

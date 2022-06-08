@@ -1,7 +1,5 @@
 export default {
-  fileCannotUpload:
-    'The file(s) could not be uploaded. Maybe invalid format.\n Please check available formats and the following file(s): ',
-  labelCannotCreate:
-    'The label could not be created.\n You cannot use the same label name or shortcut key.',
-  invalidUserOrPass: 'Incorrect username or password, or something went wrong.'
+  fileCannotUpload: 'ファイルをアップロードできませんでした。おそらくは形式が無効です\n 利用できる形式と以下のファイルを確認してください: ',
+  labelCannotCreate: 'ラベルを作成できませんでした\n 同じラベル名または短縮キーを使えません',
+  invalidUserOrPass: 'ユーザ名またはパスワードが正しくないか、何かがおかしいです'
 }

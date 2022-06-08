@@ -1,4 +1,4 @@
 export default {
-  guideline: 'Guideline',
-  writeGuidelinePrompt: 'Please write annotation guideline.'
+  guideline: 'ガイドライン',
+  writeGuidelinePrompt: 'アノテーションのガイドラインを記載してください'
 }

@@ -1,4 +1,4 @@
 export default {
-  itemsPerPageText: 'Rows per Page',
-  noDataAvailable: 'No data available'
+  itemsPerPageText: 'ページあたりの行数',
+  noDataAvailable: 'データがありません'
 }

@@ -1,42 +1,42 @@
 export default {
   colorRules: {
-    colorRequired: 'Color is required'
+    colorRequired: '色は必須です'
   },
   labelNameRules: {
-    labelRequired: 'Label name is required',
-    labelLessThan100Chars: 'Label name must be less than 100 characters',
-    duplicated: 'The label name is already used.'
+    labelRequired: 'ラベル名は必須です',
+    labelLessThan100Chars: 'ラベル名は100文字までです',
+    duplicated: 'そのラベル名は既に使われています'
   },
   keyNameRules: {
-    duplicated: 'The key is already used.'
+    duplicated: 'そのキーは既に使われています'
   },
   userNameRules: {
-    userNameRequired: 'User name is required',
-    userNameLessThan30Chars: 'User name must be less than 30 characters'
+    userNameRequired: 'ユーザ名は必須です',
+    userNameLessThan30Chars: 'ユーザ名は30文字までです'
   },
   roleRules: {
-    roleRequired: 'Role is required'
+    roleRequired: '役割は必須です'
   },
   projectNameRules: {
-    projectNameRequired: 'Project name is required',
-    projectNameLessThan30Chars: 'Project name must be less than 30 characters'
+    projectNameRequired: 'プロジェクト名は必須です',
+    projectNameLessThan30Chars: 'プロジェクト名は30文字までです'
   },
   descriptionRules: {
-    descriptionRequired: 'Description is required',
-    descriptionLessThan30Chars: 'Description must be less than 100 characters'
+    descriptionRequired: '説明は必須です',
+    descriptionLessThan30Chars: '説明は100文字までです'
   },
   projectTypeRules: {
-    projectTypeRequired: 'Project type is required'
+    projectTypeRequired: 'プロジェクトタイプは必須です'
   },
   fileFormatRules: {
-    fileFormatRequired: 'File format is required'
+    fileFormatRequired: 'ファイル形式は必須です'
   },
   uploadFileRules: {
-    fileRequired: 'File is required',
-    fileLessThan1MB: 'File size should be less than 100 MB!'
+    fileRequired: 'ファイルは必須です',
+    fileLessThan1MB: 'ファイルサイズは100MBまでです!'
   },
   passwordRules: {
-    passwordRequired: 'Password is required',
-    passwordLessThan30Chars: 'Password must be less than 30 characters'
+    passwordRequired: 'パスワードは必須です',
+    passwordLessThan30Chars: 'パスワードは30文字までです'
   }
 }

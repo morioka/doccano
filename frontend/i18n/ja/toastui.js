@@ -1,3 +1,3 @@
 export default {
-  localeCode: 'en_US'
+  localeCode: 'ja_JP'
 }

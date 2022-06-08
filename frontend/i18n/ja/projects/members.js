@@ -1,16 +1,16 @@
 export default {
-  members: 'Members',
-  role: 'Role',
-  updateRole: 'Update Role',
-  addMember: 'Add Member',
-  userSearchAPIs: 'User Search APIs',
-  userSearchPrompt: 'Start typing to search',
-  removeMember: 'Remove Member',
-  removePrompt: 'Are you sure you want to remove these members?',
+  members: 'メンバー',
+  role: '役割',
+  updateRole: '役割を更新',
+  addMember: 'メンバーを追加',
+  userSearchAPIs: 'ユーザ検索API',
+  userSearchPrompt: '検索のために入力してください',
+  removeMember: 'メンバーを削除',
+  removePrompt: '本当に、これらのメンバーを削除しますか?',
   roles: {
-    projectAdmin: 'Project Admin',
-    annotator: 'Annotator',
-    annotationApprover: 'Annotation Approver',
-    undefined: 'No Role Defined'
+    projectAdmin: 'プロジェクト管理者',
+    annotator: 'アノテーション作業者',
+    annotationApprover: 'アノテーション承認者',
+    undefined: '役割割り当てなし'
   }
 }

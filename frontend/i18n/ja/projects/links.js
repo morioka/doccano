@@ -1,5 +1,5 @@
 export default {
-  createLink: 'Create Link',
-  linkName: 'Link name',
-  linkMessage: 'Link name is required'
+  createLink: 'リンクを作成',
+  linkName: 'リンク名',
+  linkMessage: 'リンク名は必須です'
 }
