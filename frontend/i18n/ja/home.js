@@ -1,5 +1,5 @@
 export default {
-  mainTitle: 'ヒト向けのテキストアノテーション',
+  mainTitle: 'ヒトのためのテキストアノテーション',
   getStarted: '始めましょう',
   startAnnotation: 'アノテーションを開始',
   featuresTitle: '特徴',
