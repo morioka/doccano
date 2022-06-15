@@ -127,7 +127,7 @@ export default {
       this.$route.query.isChecked
     )
     const doc = this.docs.items[0]
-    if (this.enableAutoLabeling) {
+    if (this.enableAutoLabeling && !doc.isChecked) {
       await this.autoLabel(doc.id)
     }
     await this.list(doc.id)
