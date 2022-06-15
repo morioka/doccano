@@ -74,6 +74,8 @@ uvicorn auto_labeling_ner:app --reload --host 0.0.0.0 --port 8000
 
 - [Auto Labeling settings - doccano](https://doccano.github.io/doccano/advanced/auto_labelling_config/)
 - [Auto labelling from local REST request (express.js) and having server error in the templete setting step · Issue #1835 · doccano/doccano](https://github.com/doccano/doccano/issues/1835)
+- [Auto Labeling how to Write a mapping template to extract labels from API responses · Issue #1281 · doccano/doccano](https://github.com/doccano/doccano/issues/1281)
+- [How to connect to a local REST API for auto annotation? · Issue #1417 · doccano/doccano](https://github.com/doccano/doccano/issues/1417)
 
 ## 不満/不明な点
 
@@ -81,10 +83,11 @@ uvicorn auto_labeling_ner:app --reload --host 0.0.0.0 --port 8000
   - チェックマークが立ったexampleは適用除外するか、「ラベル付けして！」ボタンを押せば適用してくれるようだとうれしい。
   - Finally, move to the "annotation" page and click "Auto Labeling" button. It should display a "Slide" button for switching enable/disable auto-labeling feature. Try to enable it: (略) Each time you view a new document, it will be labeled automatically.  とあるし、注意深くなるしか。 "Each time you view a new document" の new がどのような意味を持つのか
   - チェック状態でもauto-labelingが働くのは期待していない挙動では？を、[auto-labeling - when open the auto-labeling, it erased the checked result · Issue #1816 · doccano/doccano](https://github.com/doccano/doccano/issues/1816)このissueでも挙げている
+  - 新しく doc.id (_id)に対してviewを作るときにデータをfetchするが、そのときにautoLabelを呼ぶ。その条件がauto-labelingがenabledかどうか。ここを直してあればよい? [maybe fix #1816 · morioka/doccano@c406942](https://github.com/morioka/doccano/commit/c406942525cdbf0b9df97961cebf5753c2629020)
 - いちどauto-labeling設定を作成すると、enable/disableのほかは設定を削除することしかできない。
   - 修正はさておき、内容を確認できない
   - 設定に名前を付けられないので複数の設定を区別できない
   - 複数の設定の優先順位や個別のenable/disableもない?
-  - 
+
 
 以上
