@@ -54,10 +54,10 @@ uvicorn auto_labeling_ner:app --reload --host 0.0.0.0 --port 8000
     [
         {% for entity in input %}
             {
-                "label": "{{ entity.label }}",
                 "start_offset": {{ entity.start_offset }},
-                "end_offset": {{ entity.end_offset }},
-            }{% if not loop.last %}.{% endif %}
+                "end_offset": {{ entity.end_offset}},
+                "label": "{{ entity.label }}"
+            }{% if not loop.last %},{% endif %}
         {% endfor %}
     ]
     ```
