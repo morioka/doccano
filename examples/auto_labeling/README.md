@@ -79,11 +79,12 @@ uvicorn auto_labeling_ner:app --reload --host 0.0.0.0 --port 8000
 
 ## 不満/不明な点
 
-- exampleを開くたびに問答無用で適用される。せっかく手作業で直しても、開きなおすと元の木阿弥。
-  - チェックマークが立ったexampleは適用除外するか、「ラベル付けして！」ボタンを押せば適用してくれるようだとうれしい。
-  - Finally, move to the "annotation" page and click "Auto Labeling" button. It should display a "Slide" button for switching enable/disable auto-labeling feature. Try to enable it: (略) Each time you view a new document, it will be labeled automatically.  とあるし、注意深くなるしか。 "Each time you view a new document" の new がどのような意味を持つのか
-  - チェック状態でもauto-labelingが働くのは期待していない挙動では？を、[auto-labeling - when open the auto-labeling, it erased the checked result · Issue #1816 · doccano/doccano](https://github.com/doccano/doccano/issues/1816)このissueでも挙げている
-  - 新しく doc.id (_id)に対してviewを作るときにデータをfetchするが、そのときにautoLabelを呼ぶ。その条件がauto-labelingがenabledかどうか。ここを直してあればよい? [maybe fix #1816 · morioka/doccano@c406942](https://github.com/morioka/doccano/commit/c406942525cdbf0b9df97961cebf5753c2629020)
+- ~~exampleを開くたびに問答無用で適用される。せっかく手作業で直しても、開きなおすと元の木阿弥。~~
+  - ~~チェックマークが立ったexampleは適用除外するか、「ラベル付けして！」ボタンを押せば適用してくれるようだとうれしい。~~
+  - ~~Finally, move to the "annotation" page and click "Auto Labeling" button. It should display a "Slide" button for switching enable/disable auto-labeling feature. Try to enable it: (略) Each time you view a new document, it will be labeled automatically.  とあるし、注意深くなるしか。 "Each time you view a new document" の new がどのような意味を持つのか~~
+  - ~~チェック状態でもauto-labelingが働くのは期待していない挙動では？を、[auto-labeling - when open the auto-labeling, it erased the checked result · Issue #1816 · doccano/doccano](https://github.com/doccano/doccano/issues/1816)このissueでも挙げている~~
+  - ~~新しく doc.id (_id)に対してviewを作るときにデータをfetchするが、そのときにautoLabelを呼ぶ。その条件がauto-labelingがenabledかどうか。ここを直してあればよい? [maybe fix #1816 · morioka/doccano@c406942](https://github.com/morioka/doccano/commit/c406942525cdbf0b9df97961cebf5753c2629020)~~
+  - [PR](https://github.com/doccano/doccano/pull/1866)で修正。isConfirmedが立っていれば autoLabelを適用しない
 - いちどauto-labeling設定を作成すると、enable/disableのほかは設定を削除することしかできない。
   - 修正はさておき、内容を確認できない
   - 設定に名前を付けられないので複数の設定を区別できない
