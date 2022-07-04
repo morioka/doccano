@@ -119,6 +119,7 @@ export default {
     )
     const image = this.images.items[0]
     this.setImageSize(image)
+    if (this.enableAutoLabeling && !image.isConfirmed) {
     if (this.enableAutoLabeling) {
       await this.autoLabel(image.id)
     }
@@ -142,7 +143,7 @@ export default {
     '$route.query': '$fetch',
     enableAutoLabeling(val) {
       if (val) {
-        this.list(this.image.id)
+        await this.$fetch()
       }
     }
   },

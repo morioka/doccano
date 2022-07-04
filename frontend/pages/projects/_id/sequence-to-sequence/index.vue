@@ -74,7 +74,7 @@ export default {
       this.$route.query.isChecked
     )
     const doc = this.docs.items[0]
-    if (this.enableAutoLabeling) {
+    if (this.enableAutoLabeling && !doc.isConfirmed) {
       await this.autoLabel(doc.id)
     }
     await this.list(doc.id)
@@ -97,7 +97,7 @@ export default {
     '$route.query': '$fetch',
     enableAutoLabeling(val) {
       if (val) {
-        this.list(this.doc.id)
+        await this.$fetch()
       }
     }
   },

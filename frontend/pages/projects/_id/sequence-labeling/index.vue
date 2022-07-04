@@ -182,7 +182,7 @@ export default {
     '$route.query': '$fetch',
     enableAutoLabeling(val) {
       if (val) {
-        this.list(this.doc.id)
+        await this.$fetch()
       }
     }
   },
