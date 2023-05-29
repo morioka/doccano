@@ -7,11 +7,23 @@ REST APIサーバとしてspacy/GiNZAでNERを行うサーバをFastAPIで作成
 
 ※ 現在、Sequence Labeling には Span Label のみの対応で、Relation Labelは想定外のようだ。
 
+## 環境設定
+
+```bash
+pip install uvicorn fastapi spacy ja_ginza SudachiPy pydantic
+```
 
 ## ダミー APIサーバの起動
 
 ```bash
 uvicorn auto_labeling_ner:app --reload --host 0.0.0.0 --port 8000
+```
+
+## テスト
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"text":"富士山は日本で一番高い山です。"}' http://localhost:8000/ner
+#[{"label":"Mountain","start_offset":0,"end_offset":3},{"label":"Country","start_offset":4,"end_offset":6},{"label":"Rank","start_offset":7,"end_offset":9},
 ```
 
 ## doccano project での auto-labeling 設定の作成
